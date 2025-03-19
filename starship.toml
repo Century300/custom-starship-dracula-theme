@@ -31,43 +31,48 @@ truncation_symbol = "…/"
 
 # Display time
 [time]
-format = "🕒 [$time]($style) "
+format = "🕒[$time]($style) "
 style = "bold green"
 time_format = "%I:%M %p"
 disabled = false
 
+[cmd_duration]
+format = "⏳[$duration]($style) "
+style = "bold #f1fa8c"
+min_time = 500
+
 # Battery status (if applicable)
 [battery]
-format = "🔋 [$percentage]($style) "
+format = "🔋[$percentage]($style) "
 style = "bold yellow"
 threshold = 20
 
 # Git branch
 [git_branch]
-format = "【🌱 [$branch]($style)】 "
+format = "【🌱[$branch]($style)】 "
 style = "bold yellow"
 
 # Git status
 [git_status]
-format = "([ $all_status]($style))"
+format = "([$all_status]($style))"
 style = "bold red"
 
 # Python version with an icon
 [python]
-format = "[🐍 $version]($style) "
+format = "[🐍$version]($style) "
 style = "bold cyan"
 
 # Node.js version with an icon
 [nodejs]
-format = "[📦 $version]($style) "
+format = "[📦$version]($style) "
 style = "bold green"
 
 # Rust version with an icon
 [rust]
-format = "[🦀 $version]($style) "
+format = "[🦀$version]($style) "
 style = "bold red"
 
 # Docker version with an icon
 [docker_context]
-format = "[🐳 $version]($style) "
+format = "[🐳$version]($style) "
 style = "bold blue"
