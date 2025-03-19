@@ -13,7 +13,7 @@ A **beautiful, modern, and stylish Starship prompt** using the **Dracula color s
 - 📦 Node.js Version – Shows the active Node.js version.
 - 🦀 Rust Version – Displays Rust version when in a Rust project.
 - 🐳 Docker Context – Shows active Docker environment.
-
+<br>
 
 ## 📦 Installation Guide
 
@@ -47,6 +47,7 @@ Apply changes:
 ```bash
 exec zsh
 ```
+<br>
 
 ### 📂 Folder Path Display (Truncation)
 By default, this theme displays the full folder path in most cases.
