@@ -29,7 +29,7 @@ Powershell (Windows)
 Invoke-Expression (&starship init powershell)
 ```
 
-### **2️⃣ Install a Nerd Font
+### **2️⃣ Install a Nerd Font**
 To display icons properly, install a Nerd Font from https://www.nerdfonts.com/, such as FiraCode Nerd Font, then change your terminal font manually:
 ```bash
 mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts && wget -O FiraCode.zip https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip && unzip -o FiraCode.zip -d FiraCode && rm FiraCode.zip && fc-cache -fv
