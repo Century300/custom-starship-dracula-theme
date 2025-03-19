@@ -1,7 +1,5 @@
-# Use the Dracula color palette
-palette = "dracula"
-
 # Define Dracula color palette
+palette = "dracula"
 [palettes.dracula]
 background = "#282a36"
 current_line = "#44475a"
@@ -24,29 +22,52 @@ success_symbol = "[🚀](bold green)"
 error_symbol = "[✗](bold red)"
 vicmd_symbol = "[λ](bold blue)"
 
-# Stylish Directory with Powerline separators
+# Stylish Directory
 [directory]
-format = "[](purple)📂 [$path]($style)[](purple) "
+format = "(purple)【📂 [$path]($style)】(purple)"
 style = "bold purple"
-truncation_length = 3
+truncation_length = 20
 truncation_symbol = "…/"
 
-# Git branch with Powerline separators
+# Display time
+[time]
+format = "🕒 [$time]($style) "
+style = "bold green"
+time_format = "%I:%M %p"
+disabled = false
+
+# Battery status (if applicable)
+[battery]
+format = "🔋 [$percentage]($style) "
+style = "bold yellow"
+threshold = 20
+
+# Git branch
 [git_branch]
-format = "[](yellow)🌱 [$branch]($style)[](yellow) "
+format = "【🌱 [$branch]($style)】 "
 style = "bold yellow"
 
-# Git status in bold red
+# Git status
 [git_status]
 format = "([ $all_status]($style))"
 style = "bold red"
 
 # Python version with an icon
 [python]
-format = "[🐍 v$version]($style) "
+format = "[🐍 $version]($style) "
 style = "bold cyan"
 
 # Node.js version with an icon
 [nodejs]
-format = "[📦 v$version]($style) "
+format = "[📦 $version]($style) "
 style = "bold green"
+
+# Rust version with an icon
+[rust]
+format = "[🦀 $version]($style) "
+style = "bold red"
+
+# Docker version with an icon
+[docker_context]
+format = "[🐳 $version]($style) "
+style = "bold blue"
