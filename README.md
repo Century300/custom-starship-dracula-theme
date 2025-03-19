@@ -13,6 +13,9 @@ A **beautiful, modern, and stylish Starship prompt** using the **Dracula color s
 - 📦 Node.js Version – Shows the active Node.js version.
 - 🦀 Rust Version – Displays Rust version when in a Rust project.
 - 🐳 Docker Context – Shows active Docker environment.
+
+![image](https://github.com/user-attachments/assets/9bc7d992-1b8c-4166-997c-d20301641692)
+
 <br>
 
 ## 📦 Installation Guide
