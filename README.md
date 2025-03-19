@@ -36,9 +36,6 @@ mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts && wget -O FiraCode.zip
 ```
 
 ### **3️⃣ Apply my custom Starship Dracula Theme**
-I borrowed the  color coding and added new codes.
-You can copy my starship.toml codes manually to ~/.config/starship.toml or download my codes via:
-
 I used the color coding from the [Dracula Starship GitHub
 ](https://github.com/dracula/starship/blob/9f2c60b5e6de26e340d8d91ba6c4a725e56d6992/starship.toml) and added my own configurations. You can manually copy my starship.toml source code to ~/.config/starship.toml or download it via:
 ```bash
