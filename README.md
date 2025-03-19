@@ -18,6 +18,7 @@ A **beautiful, modern, and stylish Starship prompt** using the **Dracula color s
 ## 📦 Installation Guide
 
 ### **1️⃣ Install [Starship](https://starship.rs/) cross-shell prompt**
+Recommended:
 ```bash
 curl -sS https://starship.rs/install.sh | sh
 ```
