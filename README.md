@@ -1,14 +1,18 @@
-# Dracula Starship Theme 🚀
+# Starship Dracula Theme 🚀
 
 A **beautiful, modern, and stylish Starship prompt** using the **Dracula color scheme** with **Powerline separators, glyphs, and enhanced Git integration**.
 
 ## ✨ Features
-- 🎨 **Dracula Color Palette** for a stunning dark mode experience.
-- 🚀 **Custom prompt symbols** for a modern feel.
-- 📂 **Powerline separators** for directory and Git branch.
-- 🌱 **Git integration** (branch + status).
-- 🐍 **Python & 📦 Node.js version display**.
-- ✅ **Works out of the box with Starship & Nerd Fonts**.
+- 🎨 Dracula Color Palette – Fully themed with Dracula’s dark aesthetics.
+- 📂 Stylish Directory Display – Wrapped in 【brackets】 for a clean look.
+- 🚀 Custom Prompt Symbol
+- 🕒 Time Display
+- 🔋 Battery Indicator – Shows battery percentage if below 20%.
+- 🌱 Git Integration – Displays the current branch and status.
+- 🐍 Python Version – Shows the active Python version.
+- 📦 Node.js Version – Shows the active Node.js version.
+- 🦀 Rust Version – Displays Rust version when in a Rust project.
+- 🐳 Docker Context – Shows active Docker environment.
 
 ## 📦 Installation Guide
 
@@ -51,8 +55,9 @@ By default, this theme displays the full folder path in most cases.
 However, if the path contains more than 20 folders, it will be truncated, showing only the last 20 folders.
 If you prefer a shorter path, you can change truncation_length to 3 to only display the last 3 folders:
 ```toml
+# Stylish Directory
 [directory]
-format = "[](purple)📂 [$path]($style)[](purple) "
+format = "(purple)【📂 [$path]($style)】(purple)"
 style = "bold purple"
 truncation_length = 20
 truncation_symbol = "…/"
