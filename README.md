@@ -20,17 +20,25 @@ A **beautiful, modern, and stylish Starship prompt** using the **Dracula color s
 ## 📦 Installation Guide
 
 ### **1️⃣ Install [Starship](https://starship.rs/) cross-shell prompt**
-Global:
+- Global:
 ```bash
 curl -sS https://starship.rs/install.sh | sh
 ```
-Homebrew (macOS):
+
+- Homebrew (macOS):
 ```bash
 brew install starship
 ```
-Powershell (Windows)
+
+- Powershell (Windows)
 ```bash
 Invoke-Expression (&starship init powershell)
+```
+
+- Ubuntu
+```bash
+sudo snap install --edge starship
+echo 'export STARSHIP_CONFIG="$HOME/snap/starship/common/starship.toml"' >> ~/.zshrc
 ```
 
 ### **2️⃣ Install a Nerd Font**
@@ -57,6 +65,8 @@ mkdir -p ~/.config && curl -fsSL https://raw.githubusercontent.com/Century300/cu
 # starship theme https://starship.rs/
 eval "$(starship init zsh)"
 ```
+- If you install Starship via Snap in Ubuntu, move the config file to: $HOME/snap/starship/common/starship.toml.
+
 - Apply changes:
 ```bash
 exec zsh
