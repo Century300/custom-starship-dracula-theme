@@ -41,12 +41,6 @@ format = "⏳[$duration]($style) "
 style = "bold #f1fa8c"
 min_time = 500
 
-# Battery status (if applicable)
-[battery]
-format = "🔋[$percentage]($style) "
-style = "bold yellow"
-threshold = 20
-
 # Git branch
 [git_branch]
 format = "【🌱[$branch]($style)】 "
