@@ -7,7 +7,6 @@ A **beautiful, modern, and stylish Starship prompt** using the **Dracula color s
 - 📂 Stylish Directory Display – Wrapped in 【brackets】 for a clean look.
 - 🚀 Custom Prompt Symbol
 - 🕒 Time Display
-- 🔋 Battery Indicator – Shows battery percentage if below 20%.
 - 🌱 Git Integration – Displays the current branch and status.
 - 🐍 Python Version – Shows the active Python version.
 - 📦 Node.js Version – Shows the active Node.js version.
@@ -21,7 +20,7 @@ A **beautiful, modern, and stylish Starship prompt** using the **Dracula color s
 ## 📦 Installation Guide
 
 ### **1️⃣ Install [Starship](https://starship.rs/) cross-shell prompt**
-Recommended:
+Global:
 ```bash
 curl -sS https://starship.rs/install.sh | sh
 ```
@@ -41,19 +40,24 @@ To display icons properly, install a Nerd Font from https://www.nerdfonts.com/, 
 mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts && wget -O FiraCode.zip https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip && unzip -o FiraCode.zip -d FiraCode && rm FiraCode.zip && fc-cache -fv
 
 ```
-- For macOS, use homebrew:
+- For macOS, use Homebrew:
 ```bash
 brew install --cask font-fira-code-nerd-font
 ```
 
 ### **3️⃣ Apply my custom Starship Dracula Theme**
-I used the color coding from the [Dracula Starship GitHub
+- I used the color coding from the [Dracula Starship GitHub
 ](https://github.com/dracula/starship/blob/9f2c60b5e6de26e340d8d91ba6c4a725e56d6992/starship.toml) and added my own configurations. You can manually copy my starship.toml source code to ~/.config/starship.toml or download it via:
 ```bash
 mkdir -p ~/.config && curl -fsSL https://raw.githubusercontent.com/Century300/custom-starship-dracula-theme/main/starship.toml -o ~/.config/starship.toml
 ```
 
-Apply changes:
+- Occasionally, especially on macOS, Starship may fail to automatically add the required initialization line to `~/.zshrc`. If your prompt does not reflect the Starship theme, you may need to manually add the following line at the bottom of `~/.zshrc`:
+```bash
+# starship theme https://starship.rs/
+eval "$(starship init zsh)"
+```
+- Apply changes:
 ```bash
 exec zsh
 ```
