@@ -20,7 +20,7 @@ add_newline = "true"
 [character]
 success_symbol = "[🚀](bold green)"
 error_symbol = "[✗](bold red)"
-vicmd_symbol = "[λ](bold blue)"
+vimcmd_symbol = "[λ](bold blue)"
 
 # Stylish Directory
 [directory]
