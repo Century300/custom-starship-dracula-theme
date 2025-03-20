@@ -35,9 +35,15 @@ Invoke-Expression (&starship init powershell)
 ```
 
 ### **2️⃣ Install a Nerd Font**
-To display icons properly, install a Nerd Font from https://www.nerdfonts.com/, such as FiraCode Nerd Font, then change your terminal font manually:
+To display icons properly, install a Nerd Font from https://www.nerdfonts.com/, such as FiraCode Nerd Font, then change your terminal font manually.
+- For Linux (Ubuntu, Debian, Arch, Fedora, Kali, and most distros), install FiraCode Nerd Font with:
 ```bash
 mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts && wget -O FiraCode.zip https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip && unzip -o FiraCode.zip -d FiraCode && rm FiraCode.zip && fc-cache -fv
+
+```
+- For macOS, use homebrew:
+```bash
+brew install --cask font-fira-code-nerd-font
 ```
 
 ### **3️⃣ Apply my custom Starship Dracula Theme**
