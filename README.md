@@ -20,7 +20,7 @@ A **beautiful, modern, and stylish Starship prompt** using the **Dracula color s
 
 ## 📦 Installation Guide
 ### **1️⃣ Install Dracula theme**
-Follow the instruction to download and install the Dracula Theme for [Konsole (Linux)](https://draculatheme.com/konsole), [iTerm (macOS)](https://draculatheme.com/iterm), [PowerShell (Windows)](https://draculatheme.com/powershell), or search for your preferred terminal at [draculatheme.com](https://draculatheme.com).
+Follow the instructions to download and install the Dracula Theme for [Konsole (Linux)](https://draculatheme.com/konsole), [iTerm (macOS)](https://draculatheme.com/iterm), [PowerShell (Windows)](https://draculatheme.com/powershell), or search for your preferred terminal at [draculatheme.com](https://draculatheme.com).
 
 ### **2️⃣ Install [Starship](https://starship.rs/) cross-shell prompt**
 - Global:
@@ -45,7 +45,8 @@ echo 'export STARSHIP_CONFIG="$HOME/snap/starship/common/starship.toml"' >> ~/.z
 ```
 
 ### **3️⃣ Install a Nerd Font**
-To display icons properly, install a Nerd Font from https://www.nerdfonts.com/, such as FiraCode Nerd Font, then change your terminal font manually.
+To display icons properly, install a Nerd Font from [nerdfonts.com](https://nerdfonts.com), such as FiraCode Nerd Font, then set your terminal to use the newly installed font.
+
 - For Linux (Ubuntu, Debian, Arch, Fedora, Kali, and most distros), install FiraCode Nerd Font with:
 ```bash
 mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts && wget -O FiraCode.zip https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip && unzip -o FiraCode.zip -d FiraCode && rm FiraCode.zip && fc-cache -fv
@@ -57,8 +58,7 @@ brew install --cask font-fira-code-nerd-font
 ```
 
 ### **4️⃣ Apply my custom Starship Dracula Theme**
-- I used the color coding from the [Dracula Starship GitHub
-](https://github.com/dracula/starship/blob/9f2c60b5e6de26e340d8d91ba6c4a725e56d6992/starship.toml) and added my own configurations. You can manually copy my starship.toml source code to ~/.config/starship.toml or download it via:
+- You can manually copy my starship.toml configuration to ~/.config/starship.toml or download it via:
 ```bash
 mkdir -p ~/.config && curl -fsSL https://raw.githubusercontent.com/Century300/custom-starship-dracula-theme/main/starship.toml -o ~/.config/starship.toml
 ```
@@ -70,16 +70,13 @@ eval "$(starship init zsh)"
 ```
 - If you install Starship via Snap in Ubuntu, move the config file to: $HOME/snap/starship/common/starship.toml.
 
-- Apply changes:
-```bash
-exec zsh
-```
+- To apply changes, restart your shell by 'exec zsh' or 'source ~/.zshrc' or both.
+
 <br>
 
 ## Other notes
 - **📂 Folder Path Display (Truncation):**
-By default, this theme displays the full folder path in most cases.
-However, if the path contains more than 20 folders, it will be truncated, showing only the last 20 folders.
+By default, this theme displays the full folder path unless it becomes too long.
 If you prefer a shorter path, you can change truncation_length to 3 to only display the last 3 folders:
 ```toml
 # Stylish Directory
