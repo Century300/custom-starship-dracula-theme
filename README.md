@@ -1,12 +1,13 @@
 # Starship Dracula Theme 🚀
 
-A **beautiful, modern, and stylish Starship prompt** using the **Dracula color scheme** with **Powerline separators, glyphs, and enhanced Git integration**.
+A **beautiful, modern, and stylish Starship prompt** using the **Dracula color scheme** with **Powerline separators, glyphs, and more**.
 
 ## ✨ Features
 - 🎨 Dracula Color Palette – Fully themed with Dracula’s dark aesthetics.
 - 📂 Stylish Directory Display – Wrapped in 【brackets】 for a clean look.
 - 🚀 Custom Prompt Symbol
 - 🕒 Time Display
+- 📏 Spacing Improvement – Adds a new line before the prompt for better readability.
 - 🌱 Git Integration – Displays the current branch and status.
 - 🐍 Python Version – Shows the active Python version.
 - 📦 Node.js Version – Shows the active Node.js version.
@@ -18,8 +19,10 @@ A **beautiful, modern, and stylish Starship prompt** using the **Dracula color s
 <br>
 
 ## 📦 Installation Guide
+### **1️⃣ Install Dracula theme**
+Follow the instruction to download and install the Dracula Theme for [Konsole (Linux)](https://draculatheme.com/konsole), [iTerm (macOS)](https://draculatheme.com/iterm), [PowerShell (Windows)](https://draculatheme.com/powershell), or search for your preferred terminal at [draculatheme.com](https://draculatheme.com).
 
-### **1️⃣ Install [Starship](https://starship.rs/) cross-shell prompt**
+### **2️⃣ Install [Starship](https://starship.rs/) cross-shell prompt**
 - Global:
 ```bash
 curl -sS https://starship.rs/install.sh | sh
@@ -41,7 +44,7 @@ sudo snap install --edge starship
 echo 'export STARSHIP_CONFIG="$HOME/snap/starship/common/starship.toml"' >> ~/.zshrc
 ```
 
-### **2️⃣ Install a Nerd Font**
+### **3️⃣ Install a Nerd Font**
 To display icons properly, install a Nerd Font from https://www.nerdfonts.com/, such as FiraCode Nerd Font, then change your terminal font manually.
 - For Linux (Ubuntu, Debian, Arch, Fedora, Kali, and most distros), install FiraCode Nerd Font with:
 ```bash
@@ -53,7 +56,7 @@ mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts && wget -O FiraCode.zip
 brew install --cask font-fira-code-nerd-font
 ```
 
-### **3️⃣ Apply my custom Starship Dracula Theme**
+### **4️⃣ Apply my custom Starship Dracula Theme**
 - I used the color coding from the [Dracula Starship GitHub
 ](https://github.com/dracula/starship/blob/9f2c60b5e6de26e340d8d91ba6c4a725e56d6992/starship.toml) and added my own configurations. You can manually copy my starship.toml source code to ~/.config/starship.toml or download it via:
 ```bash
@@ -73,20 +76,23 @@ exec zsh
 ```
 <br>
 
-### 📂 Folder Path Display (Truncation)
+## Other notes
+- **📂 Folder Path Display (Truncation):**
 By default, this theme displays the full folder path in most cases.
 However, if the path contains more than 20 folders, it will be truncated, showing only the last 20 folders.
 If you prefer a shorter path, you can change truncation_length to 3 to only display the last 3 folders:
 ```toml
 # Stylish Directory
 [directory]
-format = "(purple)【📂 [$path]($style)】(purple)"
+format = "(purple)【📂[$path]($style)】(purple)"
 style = "bold purple"
 truncation_length = 20
 truncation_symbol = "…/"
 ```
 
+- **Zsh (Z shell) vs Bash (Bourne Again Shell):**
+This setup is intended for Zsh. If you prefer Bash, simply replace .zshrc with .bashrc in the instructions above.
+If you're not sure which shell you're using, run 'echo $SHELL' in your terminal.
 
-
-
-
+- **Colors:**
+Some colors from the Dracula palette are defined but not currently used — this is intentional, to make it easier for others to customize or extend this theme with consistent style.
