@@ -15,7 +15,7 @@ A **beautiful, modern, and stylish Starship prompt** using the **Dracula color s
 - 🐳 Docker Context – Shows active Docker environment.
 
 **Sample screenshots from macOS and Linux:**
-![Screenshot 2025-03-28 at 11 49 22 AM](https://github.com/user-attachments/assets/3f8c75af-b6a1-4c6b-9e5c-6245a8973366)
+![image](https://github.com/user-attachments/assets/06939b60-43dd-42aa-a8f7-0c6508006405)
 ![image](https://github.com/user-attachments/assets/38d37e12-142e-4a46-ac4f-f2bf88f8ecdd)
 ![image](https://github.com/user-attachments/assets/2186bd22-637a-4e20-a15e-598ca81f48a2)
 
