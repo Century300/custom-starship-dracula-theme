@@ -63,7 +63,7 @@ brew install --cask font-fira-code-nerd-font
 ### **4️⃣ Apply my custom Starship Dracula Theme**
 - You can manually copy my starship.toml configuration to ~/.config/starship.toml or download it via:
 ```bash
-mkdir -p ~/.config && curl -fsSL https://raw.githubusercontent.com/Century300/custom-starship-dracula-theme/main/starship.toml -o ~/.config/starship.toml
+mkdir -p ~/.config && curl -fsSL https://raw.githubusercontent.com/Century300/dracula-theme-prompt/main/starship.toml -o ~/.config/starship.toml
 ```
 
 - Occasionally, especially on macOS, Starship may fail to automatically add the required initialization line to `~/.zshrc`. If your prompt does not reflect the Starship theme, you may need to manually add the following line at the bottom of `~/.zshrc`:
